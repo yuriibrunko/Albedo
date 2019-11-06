@@ -1,0 +1,58 @@
+@import "var";
+.clients {
+    background-image: url("../img/clients.png");
+    background-repeat: repeat;
+    background-position: center;
+    height: 1080px;
+    width: 100%;
+    .title {
+        @include title;
+        text-align: center;
+        padding-top: 200px;
+    }
+    h2 {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        text-align: center;
+        color: #ffffff;
+        margin: 50px 0px;
+        font-size: 30px;
+    }
+    .slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        width: 50%;
+        margin: 0 auto;
+        .first {
+            display: flex;
+            justify-content: center;
+            .human1 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                h5 {
+                    font-family: 'Coustard';
+                    font-weight: 300;
+                    color: #ffffff;
+                    font-size: 24px;
+                    text-align: center;
+                    margin-bottom: 70px;
+                }
+                img {
+                    transform: translate(-10px, 0px);
+                }
+                .name {
+                    h4 {
+                        font-family: 'Montserrat';
+                        color: #ffff00;
+                    }
+                    h3 {
+                        font-family: 'Cambay';
+                        color: #434343;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import "var";
+.portfolio {
+    height: 900px;
+    .title {
+        @include title;
+        color: #8799a3;
+        margin-top: 40px;
+        height: 200px;
+        nav {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            h2 {
+                color: #252525;
+                font-family: 'Montserrat';
+                font-weight: 900;
+            }
+            button {
+                margin-right: 50px;
+                width: 255px;
+                height: 60px;
+                background: #1cbbb4;
+                border: none;
+                border-radius: 40px;
+                text-transform: uppercase;
+                color: #ffffff;
+                box-shadow: 0px 3px 10px 2px #1cbbb4;
+            }
+        }
+    }
+    .photos {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 790px;
+        width: 100%;
+        .first {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            .box:nth-child(1) {
+                background-image: url("../img/ipad.png");
+                width: 100%;
+                height: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .box:nth-child(2) {
+                background-image: url("../img/box.png");
+                width: 50%;
+                height: 39%;
+                margin-top: -10.5%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .box:nth-child(3) {
+                background-image: url("../img/scrins.png");
+                width: 50%;
+                height: 39%;
+                margin-top: -10.5%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        .second {
+            display: flex;
+            width: 50%;
+            .box {
+                background-image: url("../img/baidge.png");
+                width: 50%;
+                height: 89%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .note-phone {
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                .box:nth-child(1) {
+                    background-image: url("../img/notes.png");
+                    width: 100%;
+                    height: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .box:nth-child(2) {
+                    background-image: url("../img/phone.png");
+                    width: 100%;
+                    height: 39%;
+                    margin-top: -21%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
