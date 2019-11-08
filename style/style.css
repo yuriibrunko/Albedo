@@ -815,7 +815,7 @@ footer {
       footer .footer-content .container .getInTouch form {
         justify-content: center; }
         footer .footer-content .container .getInTouch form button {
-          transform: translate(-250%, 100%); } }
+          transform: translate(-250%, 50%); } }
       @media (max-width: 1200px) and (max-width: 1034px) {
         footer .footer-content .container .getInTouch form button {
           transform: translate(0%, 0%); } }
