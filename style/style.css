@@ -8,39 +8,39 @@ header {
   background-image: url("../img/photo.png");
   background-repeat: no-repeat;
   background-position: center; }
-  header .head {
+  header .header-content .head {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     height: 400px; }
-    header .head .logo {
+    header .header-content .head .logo {
       margin-top: 20px;
       display: flex;
       flex-wrap: nowrap;
       height: 55px;
       align-items: center; }
-      header .head .logo p {
+      header .header-content .head .logo p {
         padding-left: 10px;
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 36px;
         color: #ffffff; }
-    header .head .menu {
+    header .header-content .head .menu {
       height: 100px;
-      width: 45%;
+      width: 55%;
       float: left; }
-      header .head .menu .menu__links {
+      header .header-content .head .menu .menu__links {
         width: 100%;
         margin-top: 37px; }
-        header .head .menu .menu__links .menu__links-item {
+        header .header-content .head .menu .menu__links .menu__links-item {
           margin-left: 20px;
           font-family: 'Work Sans', sans-serif;
           color: #ffffff;
           text-decoration: none;
           font-size: 20px; }
-        header .head .menu .menu__links .menu__links-item:hover {
+        header .header-content .head .menu .menu__links .menu__links-item:hover {
           color: #80919b; }
-    header .head button {
+    header .header-content .head button {
       margin-top: 30px;
       width: 165px;
       height: 40px;
@@ -51,35 +51,36 @@ header {
       border-radius: 40px;
       padding: 5px 10px;
       font-family: 'Montserrat';
-      font-weight: bold; }
-  header .aboutMe {
+      font-weight: bold;
+      outline: none; }
+  header .header-content .aboutMe {
     width: 50%;
     padding-left: 85px; }
-    header .aboutMe .hi {
+    header .header-content .aboutMe .hi {
       font-family: 'Leckerli One', cursive;
       color: #ffffff;
       font-size: 26px;
       margin: 20px 0px; }
-    header .aboutMe .name {
+    header .header-content .aboutMe .name {
       font-family: 'Montserrat';
       font-weight: 800;
       color: #ffffff;
       font-size: 50px; }
-      header .aboutMe .name b {
+      header .header-content .aboutMe .name b {
         color: #0081ff;
         font-weight: 800; }
-    header .aboutMe .prof {
+    header .header-content .aboutMe .prof {
       font-family: 'Montserrat';
       font-weight: 300;
       color: #ffffff;
       font-size: 30px;
       margin: 20px 0px; }
-    header .aboutMe .text {
+    header .header-content .aboutMe .text {
       font-family: 'Cambay';
       color: #636363;
       font-size: 20px;
       line-height: 20px; }
-    header .aboutMe a button {
+    header .header-content .aboutMe a button {
       margin-top: 100px;
       width: 150px;
       height: 50px;
@@ -89,13 +90,14 @@ header {
       text-transform: uppercase;
       border: none;
       border-radius: 20px;
-      box-shadow: 0px 5px 10px 2px #212121; }
+      box-shadow: 0px 5px 10px 2px #212121;
+      outline: none; }
 
 @media screen and (max-width: 1280px) {
-  header .head .menu {
+  header .header-content .head .menu {
     transform: translate(-45%, 200%);
     height: 50px; }
-    header .head .menu .menu__icon span {
+    header .header-content .head .menu .menu__icon span {
       display: block;
       position: absolute;
       height: 20px;
@@ -106,30 +108,34 @@ header {
       left: 0;
       transform: rotate(0deg);
       transition: 0.25s ease-in-out; }
-    header .head .menu .menu__icon span:nth-child(1) {
-      top: 0px; }
-    header .head .menu .menu__icon span:nth-child(2) {
-      top: 23px; }
-    header .head .menu .menu__icon span:nth-child(3) {
-      top: 46px; }
-    header .head .menu .menu__icon span:nth-child(4) {
-      top: 69px; }
-    header .head .menu .menu__links {
+    header .header-content .head .menu .menu__icon span:nth-child(1) {
+      top: 0px;
+      left: 40px; }
+    header .header-content .head .menu .menu__icon span:nth-child(2) {
+      top: 23px;
+      left: 40px; }
+    header .header-content .head .menu .menu__icon span:nth-child(3) {
+      top: 46px;
+      left: 40px; }
+    header .header-content .head .menu .menu__icon span:nth-child(4) {
+      top: 69px;
+      left: 40px; }
+    header .header-content .head .menu .menu__links {
       display: none; }
-  header .head .menu_state_open .menu__icon span:nth-child(1) {
+  header .header-content .head .menu_state_open .menu__icon span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%; }
-  header .head .menu_state_open .menu__icon span:nth-child(2) {
+  header .header-content .head .menu_state_open .menu__icon span:nth-child(2) {
     transform: rotate(45deg);
     top: 46px; }
-  header .head .menu_state_open .menu__icon span:nth-child(3) {
+  header .header-content .head .menu_state_open .menu__icon span:nth-child(3) {
     transform: rotate(-45deg); }
-  header .head .menu_state_open .menu__icon span:nth-child(4) {
+  header .header-content .head .menu_state_open .menu__icon span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%; }
-  header .head .menu_state_open .menu__links {
+  header .header-content .head .menu_state_open .menu__links {
     display: flex;
     margin-left: 80%;
     width: 150px;
@@ -139,22 +145,22 @@ header {
     font-size: 40px;
     font-weight: bold;
     z-index: 1000; } }
-@media screen and (max-width: 768px) and (max-width: 520px) {
+@media screen and (max-width: 1280px) and (max-width: 768px) and (max-width: 520px) {
   header .head a {
     margin-left: -100px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) and (max-width: 768px) {
   header .head .menu .menu__icon span {
     width: 35%; } }
-@media screen and (max-width: 768px) and (max-width: 560px) {
+@media screen and (max-width: 1280px) and (max-width: 768px) and (max-width: 560px) {
   header .head .menu .menu__icon span {
     width: 60%;
     margin-left: -20px; } }
 
-@media screen and (max-width: 768px) and (max-width: 560px) and (max-width: 460px) {
+@media screen and (max-width: 1280px) and (max-width: 768px) and (max-width: 560px) and (max-width: 460px) {
   header .head .menu .menu__icon span {
     width: 70%;
     margin-left: -60px; } }
-@media screen and (max-width: 768px) and (max-width: 560px) and (max-width: 380px) {
+@media screen and (max-width: 1280px) and (max-width: 768px) and (max-width: 560px) and (max-width: 380px) {
   header .head .menu .menu__icon span {
     width: 100%;
     margin-left: -80px; } }
@@ -164,28 +170,28 @@ header {
   width: 100%;
   background: #0081ff;
   padding-top: 120px; }
-  .About .title {
+  .About .about-content .title {
     font-family: "Leckerli One", cursive;
     color: #ffffff;
     font-size: 30px;
     padding-left: 35px; }
-  .About .text {
+  .About .about-content .text {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     padding-top: 50px; }
-    .About .text .investigate {
+    .About .about-content .text .investigate {
       width: 45%;
       font-family: 'Montserrat';
       font-weight: 800;
       font-size: 40px;
       color: #ffffff; }
-    .About .text .qestigate {
+    .About .about-content .text .qestigate {
       width: 45%;
       font-family: 'Cambay';
       font-size: 16px;
       color: #ffffff; }
-  .About .tools {
+  .About .about-content .tools {
     height: 320px;
     width: 100%;
     background: #007af2;
@@ -193,33 +199,33 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; }
-    .About .tools .brand {
+    .About .about-content .tools .brand {
       width: 28%;
       padding: 0px 60px; }
-      .About .tools .brand img {
+      .About .about-content .tools .brand img {
         transform: translate(-130%, 110%); }
-      .About .tools .brand h2 {
+      .About .about-content .tools .brand h2 {
         font-family: 'Montserrat';
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 15px; }
-      .About .tools .brand p {
+      .About .about-content .tools .brand p {
         font-family: 'Cambay';
         color: #ffffff; }
-  .About .follow {
+  .About .about-content .follow {
     display: flex;
     flex-wrap: nowrap;
     margin-top: 140px; }
-    .About .follow p {
+    .About .about-content .follow p {
       font-family: 'Cambay';
       color: #ffffff;
       margin-left: 100px; }
-    .About .follow .icons {
+    .About .about-content .follow .icons {
       margin-left: 150px; }
-      .About .follow .icons a i {
+      .About .about-content .follow .icons a i {
         color: #4da7ff;
         margin: 0px 10px; }
-      .About .follow .icons a i:hover {
+      .About .about-content .follow .icons a i:hover {
         color: #ffffff; }
 
 .portfolio {
@@ -249,7 +255,8 @@ header {
         border-radius: 40px;
         text-transform: uppercase;
         color: #ffffff;
-        box-shadow: 0px 3px 10px 2px #1cbbb4; }
+        box-shadow: 0px 3px 10px 2px #1cbbb4;
+        outline: none; }
   .portfolio .photos {
     display: flex;
     flex-wrap: nowrap;
@@ -312,46 +319,46 @@ header {
   background-position: center;
   height: 1080px;
   width: 100%; }
-  .clients .title {
+  .clients .clients-content .title {
     font-family: "Leckerli One", cursive;
     color: #ffffff;
     font-size: 30px;
     padding-left: 35px;
     text-align: center;
     padding-top: 200px; }
-  .clients h2 {
+  .clients .clients-content h2 {
     font-family: 'Montserrat';
     font-weight: 900;
     text-align: center;
     color: #ffffff;
     margin: 50px 0px;
     font-size: 30px; }
-  .clients .slider {
+  .clients .clients-content .slider {
     display: flex;
     justify-content: center;
     margin-top: 90px;
     width: 50%;
     margin: 0 auto; }
-    .clients .slider .first {
+    .clients .clients-content .slider .first {
       display: flex;
       justify-content: center; }
-      .clients .slider .first .human1 {
+      .clients .clients-content .slider .first .human1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap; }
-        .clients .slider .first .human1 h5 {
+        .clients .clients-content .slider .first .human1 h5 {
           font-family: 'Coustard';
           font-weight: 300;
           color: #ffffff;
           font-size: 24px;
           text-align: center;
           margin-bottom: 70px; }
-        .clients .slider .first .human1 img {
+        .clients .clients-content .slider .first .human1 img {
           transform: translate(-10px, 0px); }
-        .clients .slider .first .human1 .name h4 {
+        .clients .clients-content .slider .first .human1 .name h4 {
           font-family: 'Montserrat';
           color: #ffff00; }
-        .clients .slider .first .human1 .name h3 {
+        .clients .clients-content .slider .first .human1 .name h3 {
           font-family: 'Cambay';
           color: #434343; }
 
@@ -380,10 +387,11 @@ header {
       .blog .line1 .col1 .block {
         margin-top: 10px;
         width: 100%;
-        height: 367px;
+        height: 285px;
         background: #007efa;
         text-align: center;
-        padding: 70px 10px; }
+        padding: 30px 20px;
+        font-size: 24px; }
         .blog .line1 .col1 .block .date {
           font-family: 'Montserrat';
           font-weight: 800;
@@ -391,19 +399,19 @@ header {
         .blog .line1 .col1 .block .eodem {
           font-family: 'Coustard';
           color: #ffffff;
-          margin: 50px 0px; }
+          margin: 40px 0px; }
         .blog .line1 .col1 .block .name {
           font-family: 'Cambay';
           font-weight: 700;
           color: #ffff00; }
     .blog .line1 .col2 {
-      width: 50%;
-      height: 560px;
+      width: 48%;
+      height: 504px;
       background-image: url("../img/littlePhoto.png");
       background-repeat: no-repeat;
       background-position: center; }
       .blog .line1 .col2 .galery-slider {
-        padding: 90px 50px;
+        padding: 90px 80px;
         font-size: 20px; }
         .blog .line1 .col2 .galery-slider .slid .date {
           font-family: 'Montserrat';
@@ -419,7 +427,7 @@ header {
           font-weight: 400;
           color: #ffffff; }
         .blog .line1 .col2 .galery-slider .slid button {
-          margin-top: 70px;
+          margin-top: 20px;
           width: 160px;
           height: 50px;
           background: #fefb30;
@@ -506,227 +514,191 @@ footer {
   background-image: url("../img/footer.png");
   width: 100%;
   height: 1080px; }
-  footer .title {
+  footer .footer-content .title {
     font-family: "Leckerli One", cursive;
     color: #ffffff;
     font-size: 30px;
     padding-left: 35px;
     padding: 100px 0px 50px 80px; }
-  footer .container {
+  footer .footer-content .container {
     display: flex;
     flex-wrap: nowrap; }
-    footer .container .contact {
+    footer .footer-content .container .contact {
       width: 45%;
       padding-left: 80px; }
-      footer .container .contact h1 {
+      footer .footer-content .container .contact h1 {
         font-family: 'Montserrat';
         font-weight: 900;
         color: #ffffff;
         padding-bottom: 50px; }
-      footer .container .contact .find {
+      footer .footer-content .container .contact .find {
         padding-bottom: 50px; }
-        footer .container .contact .find p {
+        footer .footer-content .container .contact .find p {
           font-family: 'Cambay';
           font-weight: 400;
           color: #5f5f5f; }
-          footer .container .contact .find p b {
+          footer .footer-content .container .contact .find p b {
             font-family: 'Cambay';
             font-weight: 400;
             color: #ffffff; }
-      footer .container .contact .phone {
+      footer .footer-content .container .contact .phone {
         padding-bottom: 50px; }
-        footer .container .contact .phone p {
+        footer .footer-content .container .contact .phone p {
           font-family: 'Cambay';
           font-weight: 400;
           color: #5f5f5f; }
-        footer .container .contact .phone a {
+        footer .footer-content .container .contact .phone a {
           font-family: 'Cambay';
           font-weight: 400;
           color: #ffffff; }
-      footer .container .contact .day {
+      footer .footer-content .container .contact .day {
         padding-bottom: 50px; }
-        footer .container .contact .day p {
+        footer .footer-content .container .contact .day p {
           font-family: 'Cambay';
           font-weight: 400;
           color: #5f5f5f; }
-          footer .container .contact .day p b {
+          footer .footer-content .container .contact .day p b {
             font-family: 'Cambay';
             font-weight: 400;
             color: #ffffff; }
-      footer .container .contact .sut {
+      footer .footer-content .container .contact .sut {
         padding-bottom: 50px; }
-        footer .container .contact .sut p {
+        footer .footer-content .container .contact .sut p {
           font-family: 'Cambay';
           font-weight: 400;
           color: #5f5f5f; }
-          footer .container .contact .sut p b {
+          footer .footer-content .container .contact .sut p b {
             font-family: 'Cambay';
             font-weight: 400;
             color: #ffffff; }
-      footer .container .contact a {
-        color: #007efa; }
-      footer .container .contact .icons {
+      footer .footer-content .container .contact a {
+        color: #007efa;
+        text-decoration: none; }
+      footer .footer-content .container .contact .icons {
         margin-top: 150px; }
-        footer .container .contact .icons a i {
+        footer .footer-content .container .contact .icons a i {
           color: #393939;
           margin: 0px 10px; }
-        footer .container .contact .icons a i:hover {
+        footer .footer-content .container .contact .icons a i:hover {
           color: #ffffff; }
-    footer .container .getInTouch h1 {
+    footer .footer-content .container .getInTouch h1 {
       font-family: 'Montserrat';
       font-weight: 900;
       color: #ffffff;
       padding-bottom: 20px; }
-    footer .container .getInTouch p {
+    footer .footer-content .container .getInTouch p {
       font-family: 'Cambay';
       font-weight: 400;
       color: #5f5f5f; }
-    footer .container .getInTouch form .firstForm .name {
+    footer .footer-content .container .getInTouch form .firstForm .name {
       width: 250px;
       height: 45px;
       border-radius: 20px;
       background: #2b2b2b;
       color: #ffffff;
-      padding-left: 30px; }
-    footer .container .getInTouch form .firstForm .email {
+      padding: 0px 30px; }
+    footer .footer-content .container .getInTouch form .firstForm .email {
       width: 260px;
       height: 45px;
       border-radius: 20px;
       background: #2b2b2b;
       color: #ffffff;
-      padding-left: 30px; }
-    footer .container .getInTouch form .firstForm .name:active {
+      padding: 0px 30px;
+      margin-left: 40px; }
+    footer .footer-content .container .getInTouch form .firstForm .name:active {
       border: 1px solid #ffffff;
       background: #212121; }
-    footer .container .getInTouch form .firstForm .email:active {
+    footer .footer-content .container .getInTouch form .firstForm .email:active {
       border: 1px solid #ffffff;
       background: #212121; }
-    footer .container .getInTouch form textarea {
+    footer .footer-content .container .getInTouch form textarea {
       margin-top: 50px;
       width: 560px;
       height: 115px;
       border-radius: 20px;
       background: #2b2b2b;
       color: #ffffff;
-      padding-left: 30px;
-      margin-bottom: 30px; }
-    footer .container .getInTouch form button {
+      padding: 20px 30px;
+      margin-bottom: 30px;
+      overflow: hidden; }
+    footer .footer-content .container .getInTouch form button {
       width: 160px;
       height: 60px;
       background: #007efa;
       color: #ffffff;
       border: none;
-      border-radius: 30px; }
-  footer .foot {
-    height: 125px;
-    width: 100%;
-    background: #1f1f1f;
-    margin-top: 130px;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
-    footer .foot div {
-      color: #464646; }
-      footer .foot div .albedo {
-        color: #636363; }
-      footer .foot div .WP {
-        color: #8799a3; }
-      footer .foot div .th {
-        color: #636363; }
-    footer .foot a {
-      font-family: 'Cambay';
-      font-weight: 700;
-      text-decoration: none;
-      color: #464646; }
+      border-radius: 30px;
+      outline: none; }
+
+.foot {
+  height: 125px;
+  width: 100%;
+  background: #1f1f1f;
+  margin-top: -150px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .foot div {
+    color: #464646; }
+    .foot div .albedo {
+      color: #636363; }
+    .foot div .WP {
+      color: #8799a3; }
+    .foot div .th {
+      color: #636363; }
+  .foot a {
+    font-family: 'Cambay';
+    font-weight: 700;
+    text-decoration: none;
+    color: #464646; }
 
 @media (min-width: 2650px) {
   .clients .slider {
     width: 40%; } }
-@media (min-width: 1926px) {
-  .portfolio .photos {
-    justify-content: center; }
-    .portfolio .photos .first {
-      width: 960px; }
-      .portfolio .photos .first .box:nth-child(1) {
-        width: 960px;
-        height: 480px; }
-      .portfolio .photos .first .box:nth-child(2) {
-        width: 480px;
-        height: 305px; }
-      .portfolio .photos .first .box:nth-child(3) {
-        width: 480px;
-        height: 305px; }
-    .portfolio .photos .second {
-      width: 960px; }
-      .portfolio .photos .second .box {
-        width: 470px;
-        height: 738px; }
-      .portfolio .photos .second .note-phone .box:nth-child(1) {
-        width: 480px;
-        height: 480px; }
-      .portfolio .photos .second .note-phone .box:nth-child(2) {
-        width: 480px;
-        height: 308px; } }
-@media (min-width: 1758px) {
-  .blog .line1 .col1 .block {
-    height: 417px; } }
+@media (min-width: 1600px) {
+  .portfolio .portfolio-content .photos .first .box:nth-child(2), .portfolio .portfolio-content .photos .first .box:nth-child(3) {
+    margin-top: -87px; }
+  .portfolio .portfolio-content .photos .second .note-phone .box:nth-child(2) {
+    margin-top: -30%; }
+
+  .clients {
+    margin-top: 3px; } }
 @media (max-width: 1600px) {
   .portfolio {
     height: 1645px; }
-    .portfolio .photos {
+    .portfolio .portfolio-content .photos {
       flex-wrap: wrap;
       justify-content: center;
       height: 1460px; }
-      .portfolio .photos .first {
+      .portfolio .portfolio-content .photos .first {
         width: 60%;
         height: 56%; }
-      .portfolio .photos .second {
+        .portfolio .portfolio-content .photos .first .box:nth-child(2), .portfolio .portfolio-content .photos .first .box:nth-child(3) {
+          margin-top: -100px; }
+      .portfolio .portfolio-content .photos .second {
         margin-top: -100px;
         width: 60%;
         height: 56%; }
-        .portfolio .photos .second .note-phone {
-          height: 100%; } }
-        @media (max-width: 1600px) and (max-width: 1202px) {
-          .portfolio .photos .second .note-phone .box:nth-child(2) {
-            margin-top: -105px; } }
+        .portfolio .portfolio-content .photos .second .box {
+          height: 87.5%; }
+        .portfolio .portfolio-content .photos .second .note-phone {
+          height: 100%; }
+          .portfolio .portfolio-content .photos .second .note-phone .box:nth-child(2) {
+            margin-top: -29%; }
 
-@media (max-width: 1552px) {
-  .blog .line1 .col1 .block {
-    height: 313px;
-    padding: 30px 0px; } }
-@media (min-width: 1317px) {
-  footer .container .getInTouch form button {
-    transform: translate(-351%, 100%); } }
+  .clients {
+    margin-top: -11px; } }
 @media (max-width: 1280px) {
-  header .aboutMe {
+  header .head-content .aboutMe {
     width: 55%; } }
 @media (max-width: 1280px) and (max-width: 800px) {
-  header .aboutMe {
+  header .head-content .aboutMe {
     width: 70%; } }
 
 @media (max-width: 1212px) {
   .blog .line1 .col1 .block .date, .blog .line1 .col1 .block .eodem, .blog .line1 .col1 .block .name {
     font-size: 20px; } }
-@media (min-width: 1212px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 100px; } }
-@media (min-width: 1212px) and (min-width: 1505px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 150px; } }
-@media (min-width: 1212px) and (min-width: 1705px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 200px; } }
-@media (min-width: 1212px) and (min-width: 1905px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 300px; } }
-@media (min-width: 1212px) and (min-width: 2294px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 400px; } }
-@media (min-width: 1212px) and (min-width: 2700px) {
-  .blog .line1 .col2 .galery-slider {
-    padding: 80px 550px; } }
-
 @media (min-width: 1162px) {
   .blog {
     height: 900px; } }
@@ -739,9 +711,16 @@ footer {
         width: 50%; }
       .blog .line1 .col2 {
         margin-top: 30px;
-        width: 65%; }
+        width: 51%; }
         .blog .line1 .col2 .galery-slider {
-          padding: 80px 180px; } }
+          padding: 80px 100px; } }
+@media (max-width: 1100px) {
+  .portfolio .portfolio-content .photos .second .note-phone .box:nth-child(2) {
+    margin-top: -32%; } }
+@media (max-width: 1100px) and (max-width: 990px) {
+  .portfolio .portfolio-content .photos .second .note-phone .box:nth-child(2) {
+    margin-top: -35%; } }
+
 @media (max-width: 1080px) {
   .About {
     height: 1300px; }
@@ -758,32 +737,56 @@ footer {
 @media (max-width: 1040px) {
   .clients {
     height: 1400px; } }
+@media (min-width: 1170px) {
+  header .header-content {
+    width: 1170px;
+    margin: 0 auto; } }
+@media (min-width: 1170px) {
+  .About .about-content {
+    width: 1170px;
+    margin: 0 auto; } }
+@media (min-width: 1170px) {
+  .portfolio .portfolio-content {
+    width: 1170px;
+    margin: 0 auto; } }
+@media (min-width: 1170px) {
+  .clients .clients-content {
+    width: 1170px;
+    margin: 0 auto; } }
+@media (min-width: 1170px) {
+  .blog .blog-content {
+    width: 1170px;
+    margin: 0 auto; } }
+@media (min-width: 1170px) {
+  footer .footer-content {
+    width: 1170px;
+    margin: 0 auto; } }
 @media (max-width: 1200px) {
-  footer .container {
+  footer .footer-content .container {
     justify-content: center;
     flex-wrap: wrap; }
-    footer .container .contact {
+    footer .footer-content .container .contact {
       width: 70%;
       padding-left: 0px; }
-      footer .container .contact .find {
+      footer .footer-content .container .contact .find {
         padding-bottom: 0px; }
-      footer .container .contact .phone {
+      footer .footer-content .container .contact .phone {
         padding-bottom: 0px; }
-      footer .container .contact .day {
+      footer .footer-content .container .contact .day {
         padding-bottom: 0px; }
-      footer .container .contact .sut {
+      footer .footer-content .container .contact .sut {
         padding-bottom: 0px; }
-      footer .container .contact .icons {
+      footer .footer-content .container .contact .icons {
         margin-top: 20px; }
-    footer .container .getInTouch {
+    footer .footer-content .container .getInTouch {
       width: 70%;
       margin-top: 40px; }
-      footer .container .getInTouch form {
+      footer .footer-content .container .getInTouch form {
         justify-content: center; }
-        footer .container .getInTouch form button {
+        footer .footer-content .container .getInTouch form button {
           transform: translate(-250%, 100%); } }
       @media (max-width: 1200px) and (max-width: 1034px) {
-        footer .container .getInTouch form button {
+        footer .footer-content .container .getInTouch form button {
           transform: translate(0%, 0%); } }
 
 @media (max-width: 900px) {
@@ -792,6 +795,9 @@ footer {
   .About .follow .icons {
     margin-left: 50px; } }
 @media (max-width: 768px) {
+  .portfolio .portfolio-content .photos .second .note-phone .box:nth-child(2) {
+    margin-top: -48%; }
+
   .About {
     height: 1600px; }
     .About .text {

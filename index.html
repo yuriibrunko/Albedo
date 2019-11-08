@@ -15,41 +15,45 @@
 
 <body>
     <header>
-        <div class="head">
-            <div class="logo">
-                <img src="img/logotype.png" alt="logotype">
-                <p>albedo</p>
-            </div>
-            <div class="menu">
-                <div class="menu__icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div class="header-content">
+            <div class="head">
+                <div class="logo">
+                    <img src="img/logotype.png" alt="logotype">
+                    <p>albedo</p>
                 </div>
+                <div class="menu">
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
-                <div class="menu__links">
-                    <a class="menu__links-item" href="#">Intro</a>
-                    <a class="menu__links-item" href="#AboutMe">About me</a>
-                    <a class="menu__links-item" href="#portfolio">Portfolio</a>
-                    <a class="menu__links-item" href="#Clients">Clients</a>
-                    <a class="menu__links-item" href="#Blog">Blog</a>
-                    <a class="menu__links-item" href="#Contacts">Contacts</a>
+                    <div class="menu__links">
+                        <a class="menu__links-item" href="#">Intro</a>
+                        <a class="menu__links-item" href="#AboutMe">About me</a>
+                        <a class="menu__links-item" href="#portfolio">Portfolio</a>
+                        <a class="menu__links-item" href="#Clients">Clients</a>
+                        <a class="menu__links-item" href="#Blog">Blog</a>
+                        <a class="menu__links-item" href="#Contacts">Contacts</a>
+                    </div>
                 </div>
+                <a href="#"><button>Buy it now!</button></a>
             </div>
-            <a href="#"><button>Buy it now!</button></a>
-        </div>
-        <div class="aboutMe">
-            <p class="hi">Hi there!</p>
-            <div class="name">My name is <b>Daniel</b></div>
-            <div class="prof">I'm a Graphic Designer</div>
-            <p class="text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum,
-                anteposuerit etiam processus dynamicus.</p>
-            <a href=""><button>about me</button></a>
+            <div class="aboutMe">
+                <p class="hi">Hi there!</p>
+                <div class="name">My name is <b>Daniel</b></div>
+                <div class="prof">I'm a Graphic Designer</div>
+                <p class="text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum
+                    parum,
+                    anteposuerit etiam processus dynamicus.</p>
+                <a href=""><button>about me</button></a>
+            </div>
         </div>
     </header>
     <section class="About">
-        <div class="title"><a name="AboutMe">About me...</a></div>
+        <div class="about-content">
+            <div class="title"><a name="AboutMe">About me...</a></div>
         <div class="text">
             <p class="investigate">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
             <p class="qestigate">Qestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
@@ -90,31 +94,35 @@
                 <a href="https://www.youtube.com/?gl=UA"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
+        </div>
     </section>
     <section class="portfolio">
-        <div class="title">
-            <a name="portfolio">Portfolio...</a>
-            <nav>
-                <h2>I Make Beautiful Things!</h2>
-                <button>view all projects</button>
-            </nav>
-        </div>
-        <div class="photos">
-            <div class="first">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+        <div class="portfolio-content">
+            <div class="title">
+                <a name="portfolio">Portfolio...</a>
+                <nav>
+                    <h2>I Make Beautiful Things!</h2>
+                    <button>view all projects</button>
+                </nav>
             </div>
-            <div class="second">
-                <div class="box"></div>
-                <div class="note-phone">
+            <div class="photos">
+                <div class="first">
                     <div class="box"></div>
                     <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="second">
+                    <div class="box"></div>
+                    <div class="note-phone">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="clients">
+       <div class="clients-content">
         <div class="title"><a name="Clients">Clients...</a></div>
         <h2>What Customers Say: </h2>
         <div class="slider">
@@ -167,10 +175,12 @@
                 </div>
             </div>
         </div>
+       </div>
     </section>
 
     <section class="blog">
-        <div class="title"><a name="Blog">Blog...</a></div>
+        <div class="blog-content">
+            <div class="title"><a name="Blog">Blog...</a></div>
         <div class="line1">
             <div class="col1">
                 <div class="text">
@@ -228,21 +238,27 @@
                 <a href="#">View all Posts</a>
             </div>
         </div>
+        </div>
     </section>
 
     <footer>
+        <div class="footer-content">
             <div class="title"><a name="Contacts">Contacts...</a></div>
             <div class="container">
                 <div class="contact">
                     <h1>Contact Information</h1>
                     <div class="find">
-                        <p>You can find me here: <br>  <b>795 South Park Avenue, Melbourne, Australia</b></p>
+                        <p>You can find me here: <br> <b>795 South Park Avenue, Melbourne, Australia</b></p>
                     </div>
                     <div class="phone">
                         <p>Phone: <a href="tel:+880056789011">8 800 567 890 11</a></p>
                     </div>
-                    <div class="day"><p>Monday to Friday from <b>9.00 am to 8.00 pm EST</b></p></div>
-                    <div class="sut"><p>Saturday from <b>10.00 am to 6.00 pm EST</b></p></div>
+                    <div class="day">
+                        <p>Monday to Friday from <b>9.00 am to 8.00 pm EST</b></p>
+                    </div>
+                    <div class="sut">
+                        <p>Saturday from <b>10.00 am to 6.00 pm EST</b></p>
+                    </div>
                     <a href="mailto:hello@albedo.com">hello@albedo.com</a> <br>
                     <a href="mailto:support@albedo.com">support@albedo.com</a>
                     <div class="icons">
@@ -265,11 +281,15 @@
                     </form>
                 </div>
             </div>
-            <div class="foot">
-                <div>&copy; 2016 <b class="albedo">Albedo </b> - Universal Wordpress Theme. Developed by <b class="WP">WPlab.Pro. </b> Design by <b class="th">themefire</b>.</div>
-                <a href="#top">Back to top &uArr;</a>
-            </div>
+            
+        </div>
     </footer>
+
+    <section class="foot">
+        <div>&copy; 2016 <b class="albedo">Albedo </b> - Universal Wordpress Theme. Developed by <b
+            class="WP">WPlab.Pro. </b> Design by <b class="th">themefire</b>.</div>
+    <a href="#top">Back to top &uArr;</a>
+    </section>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="slick/slick.min.js"></script>

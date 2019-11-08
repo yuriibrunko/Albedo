@@ -4,72 +4,74 @@
     width: 100%;
     background: #0081ff;
     padding-top: 120px;
-    .title {
-        @include title;
-    }
-    .text {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        padding-top: 50px;
-        .investigate {
-            width: 45%;
-            font-family: 'Montserrat';
-            font-weight: 800;
-            font-size: 40px;
-            color: #ffffff;
+    .about-content {
+        .title {
+            @include title;
         }
-        .qestigate {
-            width: 45%;
-            font-family: 'Cambay';
-            font-size: 16px;
-            color: #ffffff;
-        }
-    }
-    .tools {
-        height: 320px;
-        width: 100%;
-        background: #007af2;
-        margin-top: 80px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        .brand {
-            width: 28%;
-            padding: 0px 60px;
-            img {
-                transform: translate(-130%, 110%);
-            }
-            h2 {
+        .text {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            padding-top: 50px;
+            .investigate {
+                width: 45%;
                 font-family: 'Montserrat';
-                font-weight: 700;
-                color: #ffffff; 
-                margin-bottom: 15px;
+                font-weight: 800;
+                font-size: 40px;
+                color: #ffffff;
             }
-            p {
+            .qestigate {
+                width: 45%;
                 font-family: 'Cambay';
+                font-size: 16px;
                 color: #ffffff;
             }
         }
-    }
-    .follow {
-        display: flex;
-        flex-wrap: nowrap;
-        margin-top: 140px;
-        p {
-            font-family: 'Cambay';
-            color: #ffffff;
-             margin-left: 100px;
-        }
-        .icons {
-            margin-left: 150px;
-            a {
-                i {
-                    color: #4da7ff;
-                    margin: 0px 10px;
+        .tools {
+            height: 320px;
+            width: 100%;
+            background: #007af2;
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            .brand {
+                width: 28%;
+                padding: 0px 60px;
+                img {
+                    transform: translate(-130%, 110%);
                 }
-                i:hover {
+                h2 {
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    color: #ffffff; 
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-family: 'Cambay';
                     color: #ffffff;
+                }
+            }
+        }
+        .follow {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 140px;
+            p {
+                font-family: 'Cambay';
+                color: #ffffff;
+                 margin-left: 100px;
+            }
+            .icons {
+                margin-left: 150px;
+                a {
+                    i {
+                        color: #4da7ff;
+                        margin: 0px 10px;
+                    }
+                    i:hover {
+                        color: #ffffff;
+                    }
                 }
             }
         }

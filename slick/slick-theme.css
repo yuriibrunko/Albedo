@@ -257,6 +257,7 @@
 .slick-dots li.slick-active button:before
 {
     transform: translate(10%, -10%);
+    transition-delay: 0.5s;
 }
 @media (max-width:1040px) {
     .slick-dots li:nth-child(1) button:before {

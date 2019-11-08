@@ -4,7 +4,6 @@
     margin-top: 80px;
     @include title;
     color: #8799a3;
-    // background: linear-gradient(135deg, white, white 30%, #e2e2e2);
     .line1 {
         display: flex;
         flex-wrap: nowrap;
@@ -25,10 +24,11 @@
             .block {
                 margin-top: 10px;
                 width: 100%;
-                height: 367px;
+                height: 285px;
                 background: #007efa;
                 text-align: center;
-                padding: 70px 10px;
+                padding: 30px 20px;
+                font-size: 24px;
                 .date {
                     font-family: 'Montserrat';
                     font-weight: 800;
@@ -37,7 +37,7 @@
                 .eodem {
                     font-family: 'Coustard';
                     color: #ffffff;
-                    margin: 50px 0px;
+                    margin: 40px 0px;
                 }
                 .name {
                     font-family: 'Cambay';
@@ -47,13 +47,13 @@
             }
         }
         .col2 {
-            width: 50%;
-            height: 560px;
+            width: 48%;
+            height: 504px;
             background-image: url("../img/littlePhoto.png");
             background-repeat: no-repeat;
             background-position: center;
             .galery-slider {
-                padding: 90px 50px;
+                padding: 90px 80px;
                 font-size: 20px;
                 .slid {
                     .date {
@@ -73,7 +73,7 @@
                         color: #ffffff;
                     }
                     button {
-                        margin-top: 70px;
+                        margin-top: 20px;
                         width: 160px;
                         height: 50px;
                         background: #fefb30;
