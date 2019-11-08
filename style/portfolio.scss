@@ -27,6 +27,11 @@
                 box-shadow: 0px 3px 10px 2px #1cbbb4;
                 outline: none;
             }
+            button:active {
+                background: #12726e;
+                border: 5px solid #12726e;
+                color: #252525;
+            }
         }
     }
     .photos {

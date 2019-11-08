@@ -53,6 +53,9 @@ header {
       font-family: 'Montserrat';
       font-weight: bold;
       outline: none; }
+    header .header-content .head button:active {
+      box-shadow: 3px 3px 0 #9b9b12;
+      border: 3px solid #ffff00; }
   header .header-content .aboutMe {
     width: 50%;
     padding-left: 85px; }
@@ -257,6 +260,10 @@ header {
         color: #ffffff;
         box-shadow: 0px 3px 10px 2px #1cbbb4;
         outline: none; }
+      .portfolio .title nav button:active {
+        background: #12726e;
+        border: 5px solid #12726e;
+        color: #252525; }
   .portfolio .photos {
     display: flex;
     flex-wrap: nowrap;
@@ -432,13 +439,21 @@ header {
           height: 50px;
           background: #fefb30;
           border: none;
-          border-radius: 20px; }
+          border-radius: 20px;
+          outline: none; }
           .blog .line1 .col2 .galery-slider .slid button a {
             text-decoration: none;
             color: #252525;
             font-family: 'Montserrat';
-            font-weight: 900; }
+            font-weight: 900;
+            outline: none; }
+        .blog .line1 .col2 .galery-slider .slid button:active {
+          background: #7c7b27;
+          border: 5px solid #7c7b27; }
+          .blog .line1 .col2 .galery-slider .slid button:active a {
+            color: #ffffff; }
   .blog .line2 {
+    margin-top: 10px;
     display: flex;
     flex-wrap: nowrap; }
     .blog .line2 .box {
@@ -591,27 +606,31 @@ footer {
       font-weight: 400;
       color: #5f5f5f; }
     footer .footer-content .container .getInTouch form .firstForm .name {
+      border: 1px solid #353535;
       width: 250px;
       height: 45px;
       border-radius: 20px;
       background: #2b2b2b;
       color: #ffffff;
-      padding: 0px 30px; }
+      padding: 0px 30px;
+      overflow: hidden;
+      outline: none; }
     footer .footer-content .container .getInTouch form .firstForm .email {
+      border: 1px solid #353535;
       width: 260px;
       height: 45px;
       border-radius: 20px;
       background: #2b2b2b;
       color: #ffffff;
       padding: 0px 30px;
-      margin-left: 40px; }
-    footer .footer-content .container .getInTouch form .firstForm .name:active {
-      border: 1px solid #ffffff;
-      background: #212121; }
-    footer .footer-content .container .getInTouch form .firstForm .email:active {
+      margin-left: 40px;
+      overflow: hidden;
+      outline: none; }
+    footer .footer-content .container .getInTouch form .firstForm .name:active, footer .footer-content .container .getInTouch form .firstForm .email:active {
       border: 1px solid #ffffff;
       background: #212121; }
     footer .footer-content .container .getInTouch form textarea {
+      border: 1px solid #353535;
       margin-top: 50px;
       width: 560px;
       height: 115px;
@@ -620,7 +639,11 @@ footer {
       color: #ffffff;
       padding: 20px 30px;
       margin-bottom: 30px;
-      overflow: hidden; }
+      overflow: hidden;
+      outline: none; }
+    footer .footer-content .container .getInTouch form textarea:active {
+      border: 1px solid #ffffff;
+      background: #212121; }
     footer .footer-content .container .getInTouch form button {
       width: 160px;
       height: 60px;
@@ -629,6 +652,11 @@ footer {
       border: none;
       border-radius: 30px;
       outline: none; }
+    footer .footer-content .container .getInTouch form button:active {
+      background: #144372;
+      border: 5px solid #144372;
+      color: #212121;
+      box-shadow: 3px 3px 3px #144372; }
 
 .foot {
   height: 125px;
@@ -652,6 +680,9 @@ footer {
     font-weight: 700;
     text-decoration: none;
     color: #464646; }
+  .foot a:hover {
+    font-size: 20px;
+    color: #ffffff; }
 
 @media (min-width: 2650px) {
   .clients .slider {

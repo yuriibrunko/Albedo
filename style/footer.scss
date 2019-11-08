@@ -103,14 +103,18 @@ footer {
                 form {
                     .firstForm {
                         .name {
+                            border: 1px solid #353535;
                             width: 250px;
                             height: 45px;
                             border-radius: 20px;
                             background: #2b2b2b;
                             color: #ffffff;
                             padding:0px 30px;
+                            overflow: hidden;
+                            outline: none;
                         }
                         .email {
+                            border: 1px solid #353535;
                             width: 260px;
                             height: 45px;
                             border-radius: 20px;
@@ -118,17 +122,16 @@ footer {
                             color: #ffffff;
                             padding: 0px 30px;
                             margin-left: 40px;
+                            overflow: hidden;
+                            outline: none;
                         }
-                        .name:active {
-                            border: 1px solid #ffffff;
-                            background: #212121;
-                        }
-                        .email:active {
+                        .name:active, .email:active {
                             border: 1px solid #ffffff;
                             background: #212121;
                         }
                     }
                     textarea {
+                        border: 1px solid #353535;
                         margin-top: 50px;
                         width: 560px;
                         height: 115px;
@@ -138,6 +141,11 @@ footer {
                         padding: 20px 30px;
                         margin-bottom: 30px;
                         overflow: hidden;
+                        outline: none;
+                    }
+                    textarea:active {
+                        border: 1px solid #ffffff;
+                        background: #212121;
                     }
                     button {
                         width: 160px;
@@ -147,6 +155,12 @@ footer {
                         border: none;
                         border-radius: 30px;
                         outline: none;
+                    }
+                    button:active {
+                        background: #144372;
+                        border: 5px solid #144372;
+                        color: #212121;
+                        box-shadow: 3px 3px 3px #144372;
                     }
                 }
             }
@@ -180,5 +194,9 @@ footer {
         font-weight: 700;
         text-decoration: none;
         color: #464646;
+    }
+    a:hover {
+       font-size: 20px;
+       color: #ffffff; 
     }
 }
